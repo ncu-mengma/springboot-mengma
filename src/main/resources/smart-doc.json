@@ -1,0 +1,47 @@
+{
+  "serverUrl": "http://localhost:8081",
+  "isStrict": true,
+  "allInOne": true,
+  "outPath": "./src/main/resources/doc",
+  "coverOld": true,
+  "createDebugPage": true,
+  "packageFilters": "com.example.demo.controller.*",
+  "packageExcludeFilters": "",
+  "md5EncryptedHtmlName": false,
+  "style":"xt256",
+  "projectName": "smart-doc",
+  "framework": "spring",
+  "skipTransientField": true,
+  "sortByTitle":false,
+  "showAuthor":true,
+  "inlineEnum":true,
+  "recursionLimit":7,
+  "allInOneDocFileName":"smart-doc.html",
+  "dataDictionaries": [
+    {
+      "title": "http状态码字典",
+      "enumClassName": "com.power.common.enums.HttpCodeEnum",
+      "codeField": "code",
+      "descField": "message"
+    }
+  ],
+  "errorCodeDictionaries": [
+    {
+      "title": "通用错误码",
+      "enumClassName": "com.example.demo.enums.ErrorCodeEnum",
+      "codeField": "code",
+      "descField": "message"
+    }
+  ],
+  "requestExample":true,
+  "responseExample":true,
+  "requestParamsTable": true,
+  "responseParamsTable": true,
+  "displayActualType":false,
+  "groups": [
+    {
+      "name": "测试分组",
+      "apis": "com.example.demo.controller.UserController"
+    }
+  ]
+}
