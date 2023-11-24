@@ -51,10 +51,11 @@ public class UserController {
      * @return
      */
     @PostMapping("/register")
-    public void register(@Valid @RequestBody UserDTO userDTO){
+    public CommonResult<?> register(@Valid @RequestBody UserDTO userDTO){
         User user=new User();
         BeanUtils.copyProperties(userDTO,user);
         userService.register(user);
+        return CommonResult.ok();
     }
     /**
      * 检验账号是否已经注册
